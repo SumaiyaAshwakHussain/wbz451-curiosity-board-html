@@ -1,0 +1,208 @@
+/* Change sidebar/nav pane background to blue */
+.wy-nav-side {
+    background-color: #005A9C; /* Your custom blue */
+}
+
+.wy-nav-side {
+    color: #000000; /* White text */
+}
+
+.wy-nav-side a {
+    color: #FFFFFF; /* White links */
+}
+
+.wy-menu-vertical li.current a {
+    background-color: #005A9C; /* Lighter blue highlight */
+    color: #FFFFFF;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #007ACC; /* Lighter draft blue */
+    color: #FFFFFF;
+}
+
+.wy-menu-vertical a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wy-nav-side {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.wy-menu-vertical li {
+    margin-bottom: 5px;
+}
+.wy-side-nav-search {
+    background-color: #003366;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* Force all sidebar sections to stay open */
+.wy-menu-vertical .toctree-l1.current > ul {
+    display: block !important;
+}
+
+
+
+/* General font style */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #333;
+}
+
+
+/* Base heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-left: 10px solid #005A9C;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Level-specific styles */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #e6f0ff;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #f0f8ff;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #005A9C;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 6px;
+    border-left: 4px solid #005A9C;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px;
+    border-left: 3px solid #005A9C;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 2px;
+    border-left: 2px solid #005A9C;
+}
+
+
+/* === Two-Column Overview Layout === */
+.overview-container {
+    display: flex;
+    gap: 2px;
+    align-items: flex-start;
+    margin-top: 2px;
+}
+
+/* === Left Column: Text === */
+.overview-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* === Right Column: Image Box === */
+.overview-image-box {
+    flex: 0 0 320px;
+    border: 1px solid #023356;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #deebf4;
+    text-align: center;
+}
+
+/* === Blue Title Box Above Image === */
+.image-title {
+    background-color: #005A9C;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+}
+
+/* === Image Styling === */
+.board-image {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* === Reference Links Below Image === */
+.image-links a {
+    font-size: 14px;
+    color: #005A9C;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.image-links a:hover {
+    text-decoration: underline;
+}
+
+
+.section-divider {
+    border: none;
+    border-top: 4px solid #005A9C;  /* Your custom blue */
+    margin: 10px 0 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Soft shadow below the line */
+}
+
+
+/* Board Details Section */
+
+.board-details {
+    font-size: 10px;
+    margin: 2px 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.board-details p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.board-details .label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px; /* Ensures all values start at same point */
+    color: #000000;
+}
+
+.board-details .value {
+    display: inline-block;
+    color: #020202;
+}
+
+
