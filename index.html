@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WBZ451 Curiosity Board &mdash; WBZ451 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=4ec40f02" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            WBZ451
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">WBZ451 Curiosity Board</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#key-features">Key Features</a></li>
+<li><a class="reference internal" href="#applications">Applications</a></li>
+<li><a class="reference internal" href="#board-highlights">Board Highlights</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hardware-details">Hardware Details</a><ul>
+<li><a class="reference internal" href="#core-components">Core Components</a></li>
+<li><a class="reference internal" href="#connectivity">Connectivity</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#software-stack">Software Stack</a><ul>
+<li><a class="reference internal" href="#development-tools">Development Tools</a></li>
+<li><a class="reference internal" href="#preloaded-demos">Preloaded Demos</a></li>
+<li><a class="reference internal" href="#example-code-snippet">Example Code Snippet</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li><a class="reference internal" href="#step-1-install-tools">Step 1: Install Tools</a></li>
+<li><a class="reference internal" href="#step-2-connect-the-board">Step 2: Connect the Board</a></li>
+<li><a class="reference internal" href="#step-3-run-demo">Step 3: Run Demo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#board-configuration">Board Configuration</a><ul>
+<li><a class="reference internal" href="#power-modes">Power Modes</a></li>
+<li><a class="reference internal" href="#usb-configuration">USB Configuration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#example-1-ble-uart-oled-display">Example 1: BLE UART OLED Display</a></li>
+<li><a class="reference internal" href="#example-2-zigbee-home-thermostat">Example 2: Zigbee Home Thermostat</a></li>
+<li><a class="reference internal" href="#example-3-ble-zigbee-bridge">Example 3: BLE + Zigbee Bridge</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">WBZ451</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">WBZ451 Curiosity Board</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wbz451-curiosity-board">
+<h1>WBZ451 Curiosity Board<a class="headerlink" href="#wbz451-curiosity-board" title="Link to this heading"></a></h1>
+<hr class="section-divider"><section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<div class="overview-container">
+    <div class="overview-text">
+        <p>
+            The WBZ451 Curiosity Board is a compact, feature-rich development platform designed by Microchip for rapid prototyping of wireless applications. It integrates the WBZ451 SoC, which supports both Zigbee and Bluetooth Low Energy (BLE) protocols, making it ideal for IoT and smart home projects.
+        </p>
+    </div>
+
+    <div class="overview-image-box">
+        <div class="image-title">Board Overview</div>
+        <img src="_static/wbz451_board_top.png" alt="WBZ451 Board" class="board-image">
+
+              <div class="board-details">
+        <p><span class="label">Name:</span> <span class="value">ev96b94a</span></p>
+        <p><span class="label">Vendor:</span class="value">Microchip Technology Inc.</span></p>
+        <p><span class="label">Architecture:</span> <span class="value">ARM</span></p>
+        <p><span class="label">SoC:</span> <span class="value">PIC32CX-BZ2</span></p>
+     </div>
+
+
+
+        <div class="image-links">
+            <a href="https://www.microchip.com/en-us/development-tool/ev96b94a" target="_blank">📐 EV96B94A</a> |
+            <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/WSG/ProductDocuments/DataSheets/PIC32CX-BZ2-and-WBZ45-Family-Data-Sheet-DS70005504.pdf" target="_blank">📄 Datasheet</a> |
+            <a href="https://ww1.microchip.com/downloads/aemDocuments/documents/WSG/ProductDocuments/UserGuides/WBZ451-Curiosity-Board-User-Guide-DS50003475.pdf" target="_blank">📖 User Guide</a> |
+            <a href="https://onlinedocs.microchip.com/oxy/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C" target="_blank">📖 Application Developer's Guide</a> |
+            <a href="https://example.com/source" target="_blank">🔗 Source Files</a>
+        </div>
+    </div>
+</div><section id="key-features">
+<h3>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>WBZ451 SoC with integrated 2.4 GHz IEEE 802.15.4 radio</p></li>
+<li><p>USB-powered with onboard debugger/programmer <strong>PKOB4</strong></p></li>
+<li><p>mikroBUS™ socket for easy expansion with Click boards</p></li>
+<li><p>On-board RGB LED, temperature sensor, and QSPI flash memory</p></li>
+<li><p>Compatible with Microchip’s MPLAB X IDE and Harmony Framework</p></li>
+<li><p>Supports Zephyr RTOS for advanced application development</p></li>
+</ul>
+</section>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Wireless sensor networks</p></li>
+<li><p>Smart lighting and home automation</p></li>
+<li><p>BLE-based data streaming</p></li>
+<li><p>Zigbee mesh networking</p></li>
+</ul>
+</section>
+<section id="board-highlights">
+<h3>Board Highlights<a class="headerlink" href="#board-highlights" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/wbz451_board_top.png"><img alt="WBZ451 Curiosity Board Top View" src="_images/wbz451_board_top.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><em>Figure 1: WBZ451 Curiosity Board Layout</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The board layout is optimized for easy access to I/O pins and debugging interfaces, making it beginner-friendly yet powerful enough for advanced development.</p>
+</section>
+</section>
+<section id="hardware-details">
+<h2>Hardware Details<a class="headerlink" href="#hardware-details" title="Link to this heading"></a></h2>
+<p>The board integrates multiple components to support wireless development and debugging.</p>
+<section id="core-components">
+<h3>Core Components<a class="headerlink" href="#core-components" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>WBZ451PE RF Module</strong>: BLE + Zigbee</p></li>
+<li><p><strong>PIC32CX-BZ2 MCU</strong>: ARM Cortex-M4F</p></li>
+<li><p><strong>PKOB4 Debugger</strong>: USB-based programming</p></li>
+<li><p><strong>MCP73871</strong>: Li-Ion/LiPo charger with power path</p></li>
+<li><p><strong>SST26VF064B</strong>: 64-Mbit QSPI Flash</p></li>
+<li><p><strong>MCP9700A</strong>: Analog temperature sensor</p></li>
+</ul>
+</section>
+<section id="connectivity">
+<h3>Connectivity<a class="headerlink" href="#connectivity" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>USB 2.0 via <strong>USB2512B Hub Controller</strong></p></li>
+<li><p>10-pin ARM SWD header</p></li>
+<li><p>mikroBUS™ socket for expansion</p></li>
+</ul>
+<div class="admonition-highlight admonition">
+<p class="admonition-title">Highlight</p>
+<p>The <strong>RGB LED</strong> is PWM-controlled and can be used for status indication or demo effects.</p>
+</div>
+</section>
+</section>
+<section id="software-stack">
+<h2>Software Stack<a class="headerlink" href="#software-stack" title="Link to this heading"></a></h2>
+<p>The WBZ451 board supports development using <strong>MPLAB X IDE</strong>, <strong>Harmony Framework</strong>, and <strong>MCC (Code Configurator)</strong>.</p>
+<section id="development-tools">
+<h3>Development Tools<a class="headerlink" href="#development-tools" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>MPLAB X IDE</strong></p></li>
+<li><p><strong>MPLAB Harmony v3</strong></p></li>
+<li><p><strong>MCC (Graphical Configuration Tool)</strong></p></li>
+</ul>
+</section>
+<section id="preloaded-demos">
+<h3>Preloaded Demos<a class="headerlink" href="#preloaded-demos" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Multi-protocol BLE + Zigbee demo</p></li>
+<li><p>UART Hello World</p></li>
+<li><p>RGB LED control</p></li>
+</ul>
+</section>
+<section id="example-code-snippet">
+<h3>Example Code Snippet<a class="headerlink" href="#example-code-snippet" title="Link to this heading"></a></h3>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">BLE Initialization</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">BLE_Init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">2</span><span class="w">    </span><span class="n">BLE_Module_Enable</span><span class="p">();</span>
+<span class="linenos">3</span><span class="w">    </span><span class="n">BLE_Set_Device_Name</span><span class="p">(</span><span class="s">&quot;WBZ451&quot;</span><span class="p">);</span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">BLE_Start_Advertising</span><span class="p">();</span>
+<span class="linenos">5</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p><em>Figure 2: BLE initialization using Harmony APIs</em></p>
+</section>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>Follow these steps to begin development with the WBZ451 Curiosity Board.</p>
+<section id="step-1-install-tools">
+<h3>Step 1: Install Tools<a class="headerlink" href="#step-1-install-tools" title="Link to this heading"></a></h3>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Install MPLAB X IDE and Harmony</span><a class="headerlink" href="#id3" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mplabx
+<span class="linenos">2</span>harmony_installer.sh
+</pre></div>
+</div>
+</div>
+</section>
+<section id="step-2-connect-the-board">
+<h3>Step 2: Connect the Board<a class="headerlink" href="#step-2-connect-the-board" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Use a <strong>micro-USB cable</strong> to connect to your PC</p></li>
+<li><p>Open MPLAB X IDE and detect the board via <strong>PKOB4</strong></p></li>
+</ul>
+</section>
+<section id="step-3-run-demo">
+<h3>Step 3: Run Demo<a class="headerlink" href="#step-3-run-demo" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Load the precompiled hex file</p></li>
+<li><p>Observe RGB LED behavior and UART output</p></li>
+</ul>
+<figure class="align-center" id="id4" style="width: 70%">
+<img alt="images/demo_led_uart.png" src="images/demo_led_uart.png" />
+<figcaption>
+<p><span class="caption-text"><em>Figure 3: Out-of-box demo with LED and UART</em></span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="board-configuration">
+<h2>Board Configuration<a class="headerlink" href="#board-configuration" title="Link to this heading"></a></h2>
+<p>This section explains how to configure the WBZ451 board for different use cases.</p>
+<section id="power-modes">
+<h3>Power Modes<a class="headerlink" href="#power-modes" title="Link to this heading"></a></h3>
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-text">Power Modes</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Mode</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Active</p></td>
+<td><p>Full operation, all peripherals enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sleep</p></td>
+<td><p>CPU halted, peripherals idle</p></td>
+</tr>
+<tr class="row-even"><td><p>Deep Sleep</p></td>
+<td><p>Minimal power consumption</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usb-configuration">
+<h3>USB Configuration<a class="headerlink" href="#usb-configuration" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>PKOB4</strong>: Debug and programming interface</p></li>
+<li><p><strong>MCP2200</strong>: USB-to-UART bridge</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the <strong>micro-B USB connector (J7)</strong> to connect to your PC.</p>
+</div>
+</section>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<p>Explore practical applications using the WBZ451 board.</p>
+<section id="example-1-ble-uart-oled-display">
+<h3>Example 1: BLE UART OLED Display<a class="headerlink" href="#example-1-ble-uart-oled-display" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Sends text from mobile app to OLED via BLE</p></li>
+<li><p>Uses Transparent UART Profile</p></li>
+</ul>
+</section>
+<section id="example-2-zigbee-home-thermostat">
+<h3>Example 2: Zigbee Home Thermostat<a class="headerlink" href="#example-2-zigbee-home-thermostat" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Reads temperature from sensor</p></li>
+<li><p>Controls AC based on setpoint</p></li>
+</ul>
+</section>
+<section id="example-3-ble-zigbee-bridge">
+<h3>Example 3: BLE + Zigbee Bridge<a class="headerlink" href="#example-3-ble-zigbee-bridge" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Smartphone connects to Zigbee network via BLE</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">Zigbee Sensor Read</span><a class="headerlink" href="#id6" title="Link to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">float</span><span class="w"> </span><span class="nf">read_temperature</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">2</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">MCP9700A_Read</span><span class="p">();</span>
+<span class="linenos">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p><em>Figure 4: Temperature sensor reading</em></p>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<p>Useful documentation and resources for WBZ451 development.</p>
+<ul class="simple">
+<li><p>[WBZ451 Curiosity Board User Guide](<a class="reference external" href="https://onlinedocs.microchip.com/oxy/GUID-11DD7207-AD32-4C1A-A63F-5E0EE9473BB0-en-US-1/index.html">https://onlinedocs.microchip.com/oxy/GUID-11DD7207-AD32-4C1A-A63F-5E0EE9473BB0-en-US-1/index.html</a>)</p></li>
+<li><p>[Microchip Development Page](<a class="reference external" href="https://www.microchip.com/en-us/development-tool/ev96b94a">https://www.microchip.com/en-us/development-tool/ev96b94a</a>)</p></li>
+<li><p>[GitHub Examples](<a class="reference external" href="https://github.com/topics/wbz451-curiosity">https://github.com/topics/wbz451-curiosity</a>)</p></li>
+<li><p>[UART Hello World Example](<a class="reference external" href="https://onlinedocs.microchip.com/oxy/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-4/GUID-E1A0E9CA-311E-4F53-9C27-160173609975.html">https://onlinedocs.microchip.com/oxy/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-4/GUID-E1A0E9CA-311E-4F53-9C27-160173609975.html</a>)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Sumaiya.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
